@@ -646,9 +646,6 @@ input[type="button"].button-primary:focus {
   overflow-x: scroll; }
 
 .work__item {
-  background-color: #5A5B5C;
-  width: 600px;
-  height: 600px;
   margin-right: 24px;
   flex-shrink: 0;
   border-radius: 24px;
@@ -669,6 +666,27 @@ input[type="button"].button-primary:focus {
 
 .work__item.listora {
   background-color: red; }
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0); }
+  100% {
+    transform: translateX(calc(-624px * 5)); } }
+
+.slider {
+  height: 600px;
+  margin: auto;
+  overflow: hidden;
+  position: relative; }
+  .slider .slide-track {
+    animation: scroll 20s linear infinite;
+    display: flex;
+    width: calc(624px * 10); }
+    .slider .slide-track:hover {
+      animation-play-state: paused; }
+  .slider .slide {
+    height: 600px;
+    width: 600px; }
 
 .design-club {
   margin: 160px auto; }
