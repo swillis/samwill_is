@@ -1,0 +1,19 @@
+{
+  "name": "samwill_is",
+  "version": "1.0.0",
+  "description": "Personal site of Sam Willis",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swillis/samwill_is.git"
+  },
+  "author": "swillis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/swillis/samwill_is/issues"
+  },
+  "homepage": "https://github.com/swillis/samwill_is#readme"
+}
