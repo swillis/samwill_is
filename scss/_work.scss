@@ -1,0 +1,36 @@
+.work {
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+}
+
+.work__item {
+  background-color: $grey-400;
+  width: 600px;
+  height: 600px;
+  margin-right: 24px;
+  flex-shrink: 0;
+  border-radius: 24px;
+  padding: 48px;
+  box-sizing: border-box;
+}
+
+.work__item.memrise {
+  background-color: yellow;
+}
+
+.work__item.fat-llama {
+  background-color: green;
+}
+
+.work__item.dependabot {
+  background-color: purple;
+}
+
+.work__item.gocardless {
+  background-color: blue;
+}
+
+.work__item.listora {
+  background-color: red;
+}

@@ -1,0 +1,24 @@
+.nav {
+  padding: 12px 0;
+  border-bottom: 1px solid $grey-600;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.875em;
+}
+
+.nav__items a {
+  margin-right: 1.5em;
+}
