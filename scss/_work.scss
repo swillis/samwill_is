@@ -3,35 +3,85 @@ $work-item-size: 600px;
 .work {
   display: flex;
   flex-direction: row;
-  overflow-x: scroll;
-}
 
-.work__item {
-  margin-right: 24px;
-  flex-shrink: 0;
-  border-radius: 24px;
-  padding: 48px;
-  box-sizing: border-box;
-}
+  .work-item {
+    margin-right: 24px;
+    flex-shrink: 0;
+    border-radius: 24px;
+    padding: 48px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 20px 40px 0 rgba(0,0,0,0.10);
 
-.work__item.memrise {
-  background-color: yellow;
-}
+    p {
+      font-size: 1em;
+      margin-bottom: 4px;
+      opacity: 1;
+    }
 
-.work__item.fat-llama {
-  background-color: green;
-}
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-size: contain;
+      background-position: right bottom;
+      background-repeat: no-repeat;
+    }
 
-.work__item.dependabot {
-  background-color: purple;
-}
+    &.memrise {
+      background: linear-gradient(135deg, #FFC000, #FFCA29);
+      color: #2B3648;
 
-.work__item.gocardless {
-  background-color: blue;
-}
+      &:before {
+        background-image: url('../img/work/memrise.png');
+        background-position: center;
+      }
+    }
 
-.work__item.listora {
-  background-color: red;
+    &.fat-llama {
+      background: linear-gradient(135deg, #786DFF, #4C3DFF);
+
+      &:before {
+        background-image: url('../img/work/fat-llama.png');
+      }
+    }
+
+    &.dependabot {
+      background: linear-gradient(135deg, #405CFF, #0025FF);
+
+      &:before {
+        background-image: url('../img/work/dependabot.png');
+      }
+    }
+
+    &.gocardless {
+      background: linear-gradient(135deg, #074AA1, #0C07A1);
+
+      &:before {
+        background-image: url('../img/work/gocardless.png');
+      }
+    }
+
+    &.listora {
+      background: linear-gradient(135deg, #074AA1, #0C07A1);
+
+      &:before {
+        background-image: url('../img/work/gocardless.png');
+      }
+    }
+
+    .work-name {
+      font-weight: 600;
+    }
+  }
 }
 
 
@@ -48,7 +98,7 @@ $animationSpeed: 20s;
 .slider {
 	height: $work-item-size;
 	margin: auto;
-	overflow:hidden;
+	overflow: hidden;
 	position: relative;
 
 	.slide-track {
