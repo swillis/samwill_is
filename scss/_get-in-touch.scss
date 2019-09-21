@@ -4,7 +4,18 @@
 
 .get-in-touch__container {
   padding: 160px 48px;
-  background-color: $grey-800;
+  background-color: $grey-400;
   border-radius: 24px;
-  margin-bottom: 24px;
+  margin-bottom: 160px;
+  box-shadow: 0 20px 40px 0 rgba(0,0,0,0.20);
+}
+
+.social-icon-container {
+  margin: 48px 0 12px;
+
+  .social-icon {
+    height: 24px;
+    width: 24px;
+    margin-right: 16px;
+  }
 }

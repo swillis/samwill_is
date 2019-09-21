@@ -1,6 +1,6 @@
 .nav {
   padding: 12px 0;
-  border-bottom: 1px solid $grey-600;
+  border-bottom: 1px solid $grey-500;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -13,12 +13,18 @@
   justify-content: space-between;
 }
 
-.nav__link {
+.nav-link,
+.nav-logo {
   color: #fff;
   text-decoration: none;
   font-size: 0.875em;
+  margin-right: 1.5em;
 }
 
-.nav__items a {
-  margin-right: 1.5em;
+.nav-link {
+  display: none;
+
+  @media (min-width: 550px) {
+      display: block;
+  }
 }

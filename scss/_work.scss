@@ -1,4 +1,5 @@
-$work-item-size: 600px;
+$work-item-desktop: 400px;
+$work-item-mobile: 600px;
 
 .work {
   display: flex;
@@ -16,12 +17,14 @@ $work-item-size: 600px;
     align-items: flex-start;
     position: relative;
     overflow: hidden;
-    box-shadow: 0 20px 40px 0 rgba(0,0,0,0.10);
+    box-shadow: $shadow;
+    z-index: 2;
 
     p {
       font-size: 1em;
-      margin-bottom: 4px;
-      opacity: 1;
+      margin-bottom: 8px;
+      color: $grey-900;
+      z-index: 999;
     }
 
     &:before {
@@ -34,11 +37,15 @@ $work-item-size: 600px;
       background-size: contain;
       background-position: right bottom;
       background-repeat: no-repeat;
+      z-index: 1;
     }
 
     &.memrise {
       background: linear-gradient(135deg, #FFC000, #FFCA29);
-      color: #2B3648;
+
+      p {
+        color: #2B3648;
+      }
 
       &:before {
         background-image: url('../img/work/memrise.png');
@@ -81,11 +88,16 @@ $work-item-size: 600px;
     .work-name {
       font-weight: 600;
     }
+
+    .work-year {
+      // opacity: 0.8;
+      font-style: italic;
+    }
   }
 }
 
 
-$animationSpeed: 20s;
+$animationSpeed: 30s;
 
 // Animation
 @keyframes scroll {
@@ -96,9 +108,10 @@ $animationSpeed: 20s;
 
 // Styling
 .slider {
-	height: $work-item-size;
+	height: $work-item-desktop;
 	margin: auto;
-	overflow: hidden;
+	overflow-x: scroll;
+  overflow-y: hidden;
 	position: relative;
 
 	.slide-track {
@@ -112,7 +125,7 @@ $animationSpeed: 20s;
 	}
 
 	.slide {
-		height: $work-item-size;
-		width: $work-item-size;
+		height: $work-item-desktop;
+		width: $work-item-desktop;
 	}
 }
