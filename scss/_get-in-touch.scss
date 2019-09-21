@@ -14,8 +14,16 @@
   margin: 48px 0 12px;
 
   .social-icon {
-    height: 24px;
-    width: 24px;
     margin-right: 16px;
+    text-decoration: none;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    img {
+      height: 24px;
+      width: 24px;
+    }
   }
 }
