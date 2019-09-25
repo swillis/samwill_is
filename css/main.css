@@ -659,7 +659,7 @@ input[type="button"].button-primary:focus {
     .hero {
       text-align: center;
       height: 80vh;
-      min-height: 700px; } }
+      min-height: 600px; } }
 
 .hero__text {
   max-width: 960px;
