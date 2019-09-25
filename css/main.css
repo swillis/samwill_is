@@ -532,6 +532,9 @@ p {
 .margin-r16 {
   margin-right: 16px; }
 
+.margin-r24 {
+  margin-right: 24px; }
+
 .margin-b40 {
   margin-bottom: 40px; }
 
@@ -556,6 +559,7 @@ input[type="button"] {
   text-align: center;
   font-size: 0.875em;
   font-weight: 500;
+  line-height: 28px;
   text-decoration: none;
   white-space: nowrap;
   background-color: transparent;
@@ -571,7 +575,8 @@ input[type="reset"].button-large,
 input[type="button"].button-large {
   height: 48px;
   font-size: 1rem;
-  padding: 0 24px; }
+  padding: 0 24px;
+  line-height: 44px; }
 
 .button:hover,
 button:hover,
@@ -600,7 +605,7 @@ button.button-secondary,
 input[type="submit"].button-secondary,
 input[type="reset"].button-secondary,
 input[type="button"].button-secondary {
-  color: #0067E3;
+  color: #101A26;
   background-color: #FFFFFF;
   border-color: #FFFFFF; }
 
@@ -659,8 +664,10 @@ input[type="button"].button-primary:focus {
 .hero__text {
   max-width: 960px;
   display: flex;
-  flex-direction: column;
-  align-items: center; }
+  flex-direction: column; }
+  @media (min-width: 550px) {
+    .hero__text {
+      align-items: center; } }
 
 .hero__text p {
   max-width: 800px; }
@@ -706,7 +713,9 @@ input[type="button"].button-primary:focus {
         background-image: url("../img/work/memrise.png");
         background-position: center; }
     .work .work-item.fat-llama {
-      background: linear-gradient(135deg, #786DFF, #4C3DFF); }
+      background: linear-gradient(135deg, #26E0B3, #26C6B3); }
+      .work .work-item.fat-llama p {
+        color: #030D54; }
       .work .work-item.fat-llama:before {
         background-image: url("../img/work/fat-llama.png"); }
     .work .work-item.dependabot {
@@ -724,31 +733,32 @@ input[type="button"].button-primary:focus {
     .work .work-item .work-info {
       z-index: 1; }
     .work .work-item .work-name {
-      font-weight: 600; }
+      font-weight: 600;
+      font-size: 1.2em; }
     .work .work-item .work-year {
-      font-style: italic; }
+      opacity: 0.64; }
 
 @keyframes scroll {
   0% {
     transform: translateX(0); }
   100% {
-    transform: translateX(calc(-624px * 5)); } }
+    transform: translateX(calc(-624px * 4)); } }
 
 .slider {
-  height: 600px;
+  height: 400px;
   margin: auto;
-  overflow-x: scroll;
-  overflow-y: hidden;
+  overflow: hidden;
   position: relative; }
+  @media (min-width: 550px) {
+    .slider {
+      height: 600px; } }
   .slider .slide-track {
-    animation: scroll 30s linear infinite;
+    animation: scroll 32s linear infinite;
     display: flex;
-    width: calc(624px * 10); }
-    .slider .slide-track:hover {
-      animation-play-state: paused; }
+    width: calc(624px * 8); }
   .slider .slide {
     height: 400px;
-    width: 400px; }
+    width: 300px; }
     @media (min-width: 550px) {
       .slider .slide {
         height: 600px;
@@ -758,9 +768,12 @@ input[type="button"].button-primary:focus {
   margin: 160px auto 80px; }
 
 .design-club__strapline {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-style: italic;
   color: #6D7076; }
+  @media (min-width: 550px) {
+    .design-club__strapline {
+      font-size: 2rem; } }
 
 .design-club__image {
   max-width: 100%; }
@@ -769,19 +782,32 @@ input[type="button"].button-primary:focus {
   text-align: center; }
 
 .get-in-touch__container {
-  padding: 160px 48px;
+  padding: 80px 48px;
   background-color: #343B43;
   border-radius: 24px;
-  margin-bottom: 160px;
-  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.2); }
+  margin-bottom: 24px;
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column; }
+  @media (min-width: 550px) {
+    .get-in-touch__container {
+      padding: 160px 48px;
+      margin-bottom: 160px; } }
 
 .social-icon-container {
-  margin: 48px 0 12px; }
+  margin: 48px 0 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
   .social-icon-container .social-icon {
-    margin-right: 16px;
-    text-decoration: none; }
+    margin-right: 24px;
+    text-decoration: none;
+    position: relative;
+    top: 2px; }
     .social-icon-container .social-icon:hover {
       opacity: 0.8; }
+    .social-icon-container .social-icon:last-child {
+      margin-right: 0; }
     .social-icon-container .social-icon img {
       height: 24px;
       width: 24px; }

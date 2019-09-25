@@ -18,9 +18,9 @@
   max-width: 960px;
   display: flex;
   flex-direction: column;
-  align-items: center;
 
-  @media (min-width: 550px) {
+  @media (min-width: $mobile-up) {
+    align-items: center;
   }
 }
 
