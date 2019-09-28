@@ -836,4 +836,5 @@ input[type="button"].button-primary:focus {
     color: #97999D; }
   @media (min-width: 550px) {
     .social-icon-container {
-      margin: 48px 0 12px; } }
+      margin: 48px 0 12px;
+      flex-direction: row; } }
