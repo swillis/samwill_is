@@ -852,8 +852,13 @@ input[type="button"].button-primary:focus {
   background-color: #FFFFFF; }
   .light-mode h1, .light-mode h2 {
     color: #101A26; }
+  .light-mode a {
+    color: #101A26; }
   .light-mode .nav {
     border-color: #CACBCC; }
+  .light-mode .nav-link,
+  .light-mode .nav-logo {
+    color: #101A26; }
   .light-mode .button,
   .light-mode button,
   .light-mode input[type="submit"],
@@ -868,3 +873,5 @@ input[type="button"].button-primary:focus {
   .light-mode input[type="button"].button-secondary {
     background-color: #101A26;
     color: #FFFFFF; }
+  .light-mode .get-in-touch__container {
+    background: #CACBCC; }

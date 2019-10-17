@@ -5,8 +5,17 @@
     color: $grey-100;
   }
 
+  a {
+    color: $grey-100;
+  }
+
   .nav {
     border-color: $grey-800;
+  }
+
+  .nav-link,
+  .nav-logo {
+    color: $grey-100;
   }
 
   .button,
@@ -25,5 +34,9 @@
   input[type="button"].button-secondary {
     background-color: $grey-100;
     color: $grey-900;
+  }
+
+  .get-in-touch__container {
+    background: $grey-800;
   }
 }
