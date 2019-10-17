@@ -31,7 +31,7 @@
 		<!-- <meta name="theme-color" content="#ffffff"> -->
 
   </head>
-  <body>
+  <body id="mode">
     <div class="nav">
       <a href="/" class="nav-logo">samwill.is</a>
 
@@ -39,6 +39,7 @@
         <a href="#work" class="nav-link">Selected work</a>
         <a href="#design-club" class="nav-link">Design Club</a>
         <a href="#get-in-touch" class="button button-secondary">Get in touch</a>
+        <button type="button" name="button" class="button" onclick="classToggle()">Toggle</button>
       </div>
     </div>
 
@@ -186,5 +187,25 @@
         </div>
       </div>
     </div>
+
+    <script>
+      function classToggle() {
+        var element = document.getElementById("mode");
+
+        if (element.classList) {
+          element.classList.toggle("light-mode");
+        } else {
+          var classes = element.className.split(" ");
+          var i = classes.indexOf("light-mode");
+
+          if (i >= 0)
+            classes.splice(i, 1);
+          else
+            classes.push("mystyle");
+            element.className = classes.join(" ");
+        }
+      }
+    </script>
+
   </body>
 </html>

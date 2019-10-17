@@ -1,0 +1,29 @@
+.light-mode {
+  background-color: $grey-900;
+
+  h1, h2 {
+    color: $grey-100;
+  }
+
+  .nav {
+    border-color: $grey-800;
+  }
+
+  .button,
+  button,
+  input[type="submit"],
+  input[type="reset"],
+  input[type="button"] {
+    color: $grey-100;
+    border-color: $grey-100;
+  }
+
+  .button-secondary,
+  button.button-secondary,
+  input[type="submit"].button-secondary,
+  input[type="reset"].button-secondary,
+  input[type="button"].button-secondary {
+    background-color: $grey-100;
+    color: $grey-900;
+  }
+}
