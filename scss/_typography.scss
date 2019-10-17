@@ -41,9 +41,14 @@ p {
 
 a,
 span {
-  font-size: 1em;
+  font-size: 1rem;
   line-height: 1.2;
   font-weight: 400;
+}
+
+a {
+  color: $grey-900;
+  text-decoration: none;
 }
 
 // Larger than phablet
@@ -70,11 +75,11 @@ span {
 
   p {
     margin-top: 0;
-    font-size: 1.5em;
+    font-size: 1.5rem;
   }
 
   a,
   span {
-    font-size: 1.5em;
+    font-size: 1.5rem;
   }
 }
