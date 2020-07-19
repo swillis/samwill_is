@@ -371,13 +371,13 @@ h1, h2, h3, h4, h5, h6, p {
 
 h1, h2 {
   font-size: 2.4rem;
-  line-height: 1.2;
+  line-height: 1.2em;
   font-weight: 700;
   color: #FFFFFF; }
 
 h3 {
   font-size: 2.5rem;
-  line-height: 1.2;
+  line-height: 1.2em;
   font-weight: 700; }
 
 h4 {
@@ -393,8 +393,8 @@ h6 {
   line-height: 1.6; }
 
 p {
-  font-size: 1em;
-  line-height: 1.2;
+  font-size: 1.2em;
+  line-height: 1.2em;
   color: #97999D;
   font-weight: 400; }
 
